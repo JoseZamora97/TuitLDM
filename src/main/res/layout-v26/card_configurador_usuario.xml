@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="5dp"
+    android:elevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!--Este es layout de la imagen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_fotoPerfilConfigurador"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/todo"
+                app:border_color="@color/colorPrimary"
+                app:border_width="3dp"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/nick_configurador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="@string/nick_usuario"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="81dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginStart="7dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="62dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:text="@string/pass"
+                            android:textColor="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/pass_configurador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:inputType="textPassword"
+                        android:text="@string/nick_usuario"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill,LabelFor,TextViewEdits" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_editarPass"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@color/transparente"
+                        android:elevation="2dp"
+                        android:src="@drawable/ic_lapiz"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:contentDescription="@string/editarparametro" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginStart="7dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:text="@string/nombre"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/nombre_configurador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:text="@string/nombre_del_usuario"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        tools:ignore="LabelFor,UnusedAttribute" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_editarNombre"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@color/transparente"
+                        android:elevation="2dp"
+                        android:src="@drawable/ic_lapiz"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:contentDescription="@string/editarparametro" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginStart="7dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:text="@string/apellido"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/apellido_configurador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:text="@string/apellido_del_usuario"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        tools:ignore="LabelFor,UnusedAttribute" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_editarApellido"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@color/transparente"
+                        android:elevation="2dp"
+                        android:src="@drawable/ic_lapiz"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:contentDescription="@string/editarparametro" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <Button
+                        android:id="@+id/btn_cerrarCuenta"
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fondo_btn_crear"
+                        android:elevation="2dp"
+                        android:text="@string/cerrar_cuentra"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <Button
+                        android:id="@+id/btn_borrarCuenta"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fondo_btn_entrar"
+                        android:elevation="2dp"
+                        android:text="@string/borrar_cuentra"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

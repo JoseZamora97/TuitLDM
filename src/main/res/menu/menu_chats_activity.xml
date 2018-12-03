@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/accion_buscar_chats_activity_"
+        android:icon="@drawable/ic_buscar_blanco"
+        android:title="@string/buscar_usuarios_para_crear_conexioens"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/accion_info_chats_activity_"
+        android:icon="@drawable/ic_info_blanco"
+        android:title="@string/mostrar_info_de_lo_que_ves"
+        app:showAsAction="ifRoom"/>
+
+</menu>
